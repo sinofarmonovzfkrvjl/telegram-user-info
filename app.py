@@ -24,6 +24,7 @@ async def get_user_info(username):
         "last_name": user.last_name,
         "is_bot": user.bot,
         "status": str(user.status),
+        "phone": str(user.phone),
     }
 
     await client.disconnect()
