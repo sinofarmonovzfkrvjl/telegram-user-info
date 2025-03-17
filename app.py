@@ -30,6 +30,6 @@ async def get_user_info(username):
     await client.disconnect()
     return user_info
 
-@app.get("/{username}")
+@app.get("/{username}", tags=["GET"])
 async def root(username):
     return await get_user_info(username)
